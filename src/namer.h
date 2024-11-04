@@ -1,7 +1,7 @@
 #ifndef FLATBUFFERS_NAMER
 #define FLATBUFFERS_NAMER
 
-#include "flatbuffers/util.h"
+#include "flatbuffers/include/flatbuffers/util.h"
 
 namespace flatbuffers {
 

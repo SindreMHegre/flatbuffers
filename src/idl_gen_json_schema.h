@@ -20,7 +20,7 @@
 #include <memory>
 #include <string>
 
-#include "flatbuffers/code_generator.h"
+#include "flatbuffers/include/flatbuffers/code_generator.h"
 
 namespace flatbuffers {
 

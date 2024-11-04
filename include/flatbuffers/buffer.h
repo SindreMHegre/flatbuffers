@@ -19,7 +19,7 @@
 
 #include <algorithm>
 
-#include "flatbuffers/base.h"
+#include "flatbuffers/include/flatbuffers/base.h"
 
 namespace flatbuffers {
 

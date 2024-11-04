@@ -4,11 +4,11 @@
 
 #include "64bit/test_64bit_bfbs_generated.h"
 #include "64bit/test_64bit_generated.h"
-#include "flatbuffers/base.h"
-#include "flatbuffers/flatbuffer_builder.h"
-#include "flatbuffers/flatbuffers.h"
-#include "flatbuffers/reflection.h"
-#include "flatbuffers/verifier.h"
+#include "flatbuffers/include/flatbuffers/base.h"
+#include "flatbuffers/include/flatbuffers/flatbuffer_builder.h"
+#include "flatbuffers/include/flatbuffers/flatbuffers.h"
+#include "flatbuffers/include/flatbuffers/reflection.h"
+#include "flatbuffers/include/flatbuffers/verifier.h"
 #include "test_assert.h"
 #include "test_init.h"
 

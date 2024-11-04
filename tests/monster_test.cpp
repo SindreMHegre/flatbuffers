@@ -3,12 +3,12 @@
 #include <limits>
 #include <vector>
 
-#include "flatbuffers/base.h"
-#include "flatbuffers/flatbuffer_builder.h"
-#include "flatbuffers/flatbuffers.h"
-#include "flatbuffers/idl.h"
-#include "flatbuffers/registry.h"
-#include "flatbuffers/verifier.h"
+#include "flatbuffers/include/flatbuffers/base.h"
+#include "flatbuffers/include/flatbuffers/flatbuffer_builder.h"
+#include "flatbuffers/include/flatbuffers/flatbuffers.h"
+#include "flatbuffers/include/flatbuffers/idl.h"
+#include "flatbuffers/include/flatbuffers/registry.h"
+#include "flatbuffers/include/flatbuffers/verifier.h"
 #include "is_quiet_nan.h"
 #include "monster_extra_generated.h"
 #include "monster_test_generated.h"

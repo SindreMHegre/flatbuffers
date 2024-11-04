@@ -1,7 +1,7 @@
 #include <iostream>
 #include <assert.h>
 
-#include "flatbuffers/util.h"
+#include "flatbuffers/include/flatbuffers/util.h"
 
 extern "C" int LLVMFuzzerTestOneInput(const uint8_t *data, size_t size);
 

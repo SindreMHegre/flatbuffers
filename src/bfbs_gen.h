@@ -19,8 +19,8 @@
 
 #include <cstdint>
 
-#include "flatbuffers/code_generator.h"
-#include "flatbuffers/reflection_generated.h"
+#include "flatbuffers/include/flatbuffers/code_generator.h"
+#include "flatbuffers/include/flatbuffers/reflection_generated.h"
 
 namespace flatbuffers {
 

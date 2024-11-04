@@ -7,10 +7,10 @@
 #include <limits>
 #include <ostream>
 
-#include "flatbuffers/base.h"
-#include "flatbuffers/buffer.h"
-#include "flatbuffers/flatbuffer_builder.h"
-#include "flatbuffers/flatbuffers.h"
+#include "flatbuffers/include/flatbuffers/base.h"
+#include "flatbuffers/include/flatbuffers/buffer.h"
+#include "flatbuffers/include/flatbuffers/flatbuffer_builder.h"
+#include "flatbuffers/include/flatbuffers/flatbuffers.h"
 #include "tests/64bit/evolution/v1_generated.h"
 #include "tests/64bit/evolution/v2_generated.h"
 #include "tests/64bit/test_64bit_generated.h"

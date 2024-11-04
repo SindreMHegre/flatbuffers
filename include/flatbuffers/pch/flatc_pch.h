@@ -30,10 +30,10 @@
 #include <tuple>
 
 // flatbuffers
-#include "flatbuffers/pch/pch.h"
-#include "flatbuffers/code_generators.h"
-#include "flatbuffers/flatbuffers.h"
-#include "flatbuffers/flexbuffers.h"
-#include "flatbuffers/idl.h"
+#include "flatbuffers/include/flatbuffers/pch/pch.h"
+#include "flatbuffers/include/flatbuffers/code_generators.h"
+#include "flatbuffers/include/flatbuffers/flatbuffers.h"
+#include "flatbuffers/include/flatbuffers/flexbuffers.h"
+#include "flatbuffers/include/flatbuffers/idl.h"
 
 #endif // FLATBUFFERS_FLATC_PCH_H_

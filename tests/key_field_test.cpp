@@ -2,8 +2,8 @@
 
 #include <iostream>
 
-#include "flatbuffers/flatbuffers.h"
-#include "flatbuffers/idl.h"
+#include "flatbuffers/include/flatbuffers/flatbuffers.h"
+#include "flatbuffers/include/flatbuffers/idl.h"
 #include "key_field/key_field_sample_generated.h"
 #include "test_assert.h"
 

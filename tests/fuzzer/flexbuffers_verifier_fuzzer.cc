@@ -5,7 +5,7 @@
 #include <stdint.h>
 #include <string>
 
-#include "flatbuffers/flexbuffers.h"
+#include "flatbuffers/include/flatbuffers/flexbuffers.h"
 
 extern "C" int LLVMFuzzerTestOneInput(const uint8_t* data, size_t size) {
   std::vector<uint8_t> reuse_tracker;

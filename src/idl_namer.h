@@ -1,7 +1,7 @@
 #ifndef FLATBUFFERS_IDL_NAMER
 #define FLATBUFFERS_IDL_NAMER
 
-#include "flatbuffers/idl.h"
+#include "flatbuffers/include/flatbuffers/idl.h"
 #include "namer.h"
 
 namespace flatbuffers {

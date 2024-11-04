@@ -7,10 +7,10 @@
 #include <string>
 #include <vector>
 
-#include "flatbuffers/base.h"
-#include "flatbuffers/reflection.h"
-#include "flatbuffers/util.h"
-#include "flatbuffers/verifier.h"
+#include "flatbuffers/include/flatbuffers/base.h"
+#include "flatbuffers/include/flatbuffers/reflection.h"
+#include "flatbuffers/include/flatbuffers/util.h"
+#include "flatbuffers/include/flatbuffers/verifier.h"
 
 namespace flatbuffers {
 namespace {

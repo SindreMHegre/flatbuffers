@@ -24,12 +24,12 @@
 #include <unordered_set>
 #include <utility>
 
-#include "flatbuffers/base.h"
-#include "flatbuffers/code_generators.h"
-#include "flatbuffers/flatbuffers.h"
-#include "flatbuffers/flatc.h"
-#include "flatbuffers/idl.h"
-#include "flatbuffers/util.h"
+#include "flatbuffers/include/flatbuffers/base.h"
+#include "flatbuffers/include/flatbuffers/code_generators.h"
+#include "flatbuffers/include/flatbuffers/flatbuffers.h"
+#include "flatbuffers/include/flatbuffers/flatc.h"
+#include "flatbuffers/include/flatbuffers/idl.h"
+#include "flatbuffers/include/flatbuffers/util.h"
 
 namespace flatbuffers {
 
@@ -777,7 +777,7 @@ class CppGenerator : public BaseGenerator {
       if (type.enum_def) return WrapInNameSpace(*type.enum_def);
       if (type.base_type == BASE_TYPE_BOOL) return "bool";
     }
-    // Get real underlying type for union type 
+    // Get real underlying type for union type
     auto base_type = type.base_type;
     if (type.base_type == BASE_TYPE_UTYPE && type.enum_def != nullptr) {
         base_type = type.enum_def->underlying_type.base_type;
@@ -1051,7 +1051,7 @@ class CppGenerator : public BaseGenerator {
 
   std::string UnionVectorVerifySignature(const EnumDef &enum_def) {
     const std::string name = Name(enum_def);
-    const std::string &type = opts_.scoped_enums ? name : GenTypeBasic(enum_def.underlying_type, false); 
+    const std::string &type = opts_.scoped_enums ? name : GenTypeBasic(enum_def.underlying_type, false);
     return "bool Verify" + name + "Vector" +
            "(::flatbuffers::Verifier &verifier, " +
            "const ::flatbuffers::Vector<::flatbuffers::Offset<void>> "

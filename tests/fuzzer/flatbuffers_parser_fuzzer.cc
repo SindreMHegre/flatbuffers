@@ -6,7 +6,7 @@
 #include <clocale>
 #include <string>
 
-#include "flatbuffers/idl.h"
+#include "flatbuffers/include/flatbuffers/idl.h"
 #include "test_init.h"
 
 static constexpr size_t kMinInputLength = 1;

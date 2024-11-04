@@ -8,8 +8,8 @@
 #include <string>
 
 #include "binary_annotator.h"
-#include "flatbuffers/base.h"
-#include "flatbuffers/util.h"
+#include "flatbuffers/include/flatbuffers/base.h"
+#include "flatbuffers/include/flatbuffers/util.h"
 
 namespace flatbuffers {
 namespace {

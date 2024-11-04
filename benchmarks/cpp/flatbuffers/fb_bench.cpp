@@ -5,7 +5,7 @@
 
 #include "benchmarks/cpp/bench.h"
 #include "benchmarks/cpp/flatbuffers/bench_generated.h"
-#include "flatbuffers/flatbuffers.h"
+#include "flatbuffers/include/flatbuffers/flatbuffers.h"
 
 using namespace flatbuffers;
 using namespace benchmarks_flatbuffers;

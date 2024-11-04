@@ -3,7 +3,7 @@
 #include <map>
 #include <sstream>
 
-#include "flatbuffers/util.h"
+#include "flatbuffers/include/flatbuffers/util.h"
 
 namespace grpc_cpp_generator {
 namespace {

@@ -23,11 +23,11 @@
 #include <unordered_map>
 #include <unordered_set>
 
-#include "flatbuffers/code_generators.h"
-#include "flatbuffers/flatbuffers.h"
-#include "flatbuffers/flatc.h"
-#include "flatbuffers/idl.h"
-#include "flatbuffers/util.h"
+#include "flatbuffers/include/flatbuffers/code_generators.h"
+#include "flatbuffers/include/flatbuffers/flatbuffers.h"
+#include "flatbuffers/include/flatbuffers/flatc.h"
+#include "flatbuffers/include/flatbuffers/idl.h"
+#include "flatbuffers/include/flatbuffers/util.h"
 #include "idl_namer.h"
 
 namespace flatbuffers {
@@ -564,7 +564,7 @@ class TsGenerator : public BaseGenerator {
 
   static Type GetUnionUnderlyingType(const Type &type)
   {
-    if (type.enum_def != nullptr && 
+    if (type.enum_def != nullptr &&
         type.enum_def->underlying_type.base_type != type.base_type) {
       return type.enum_def->underlying_type;
     } else {

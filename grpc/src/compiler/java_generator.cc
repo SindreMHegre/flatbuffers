@@ -23,7 +23,7 @@
 #include <utility>
 #include <vector>
 
-#include "flatbuffers/util.h"
+#include "flatbuffers/include/flatbuffers/util.h"
 #define to_string flatbuffers::NumToString
 
 // Stringify helpers used solely to cast GRPC_VERSION

@@ -26,8 +26,8 @@
 #include <utility>
 #include <vector>
 
-#include "flatbuffers/flatbuffers.h"
-#include "flatbuffers/util.h"
+#include "flatbuffers/include/flatbuffers/flatbuffers.h"
+#include "flatbuffers/include/flatbuffers/util.h"
 
 namespace cpp17 {
 

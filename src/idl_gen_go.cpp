@@ -23,11 +23,11 @@
 #include <sstream>
 #include <string>
 
-#include "flatbuffers/base.h"
-#include "flatbuffers/code_generators.h"
-#include "flatbuffers/flatbuffers.h"
-#include "flatbuffers/idl.h"
-#include "flatbuffers/util.h"
+#include "flatbuffers/include/flatbuffers/base.h"
+#include "flatbuffers/include/flatbuffers/code_generators.h"
+#include "flatbuffers/include/flatbuffers/flatbuffers.h"
+#include "flatbuffers/include/flatbuffers/idl.h"
+#include "flatbuffers/include/flatbuffers/util.h"
 #include "idl_namer.h"
 
 #ifdef _WIN32

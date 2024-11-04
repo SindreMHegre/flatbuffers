@@ -19,13 +19,13 @@
 // Warning:
 // This is an experimental feature and could change at any time.
 
-#include "flatbuffers/flatbuffers.h"
-#include "flatbuffers/flex_flat_util.h"
-#include "flatbuffers/flexbuffers.h"
-#include "flatbuffers/idl.h"
-#include "flatbuffers/minireflect.h"
-#include "flatbuffers/registry.h"
-#include "flatbuffers/util.h"
+#include "flatbuffers/include/flatbuffers/flatbuffers.h"
+#include "flatbuffers/include/flatbuffers/flex_flat_util.h"
+#include "flatbuffers/include/flatbuffers/flexbuffers.h"
+#include "flatbuffers/include/flatbuffers/idl.h"
+#include "flatbuffers/include/flatbuffers/minireflect.h"
+#include "flatbuffers/include/flatbuffers/registry.h"
+#include "flatbuffers/include/flatbuffers/util.h"
 #include "stringify_util.h"
 #include "test_assert.h"
 

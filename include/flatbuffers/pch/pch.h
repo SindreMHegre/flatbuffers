@@ -33,6 +33,6 @@
 #include <type_traits>
 
 // flatbuffers
-#include "flatbuffers/util.h"
+#include "flatbuffers/include/flatbuffers/util.h"
 
 #endif // FLATBUFFERS_PCH_H_

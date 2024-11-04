@@ -1,7 +1,7 @@
 #include "json_test.h"
 
-#include "flatbuffers/flatbuffers.h"
-#include "flatbuffers/idl.h"
+#include "flatbuffers/include/flatbuffers/flatbuffers.h"
+#include "flatbuffers/include/flatbuffers/idl.h"
 #include "monster_test_bfbs_generated.h"
 #include "monster_test_generated.h"
 #include "optional_scalars_generated.h"

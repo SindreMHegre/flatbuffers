@@ -2,7 +2,7 @@
 
 #include "evolution_test/evolution_v1_generated.h"
 #include "evolution_test/evolution_v2_generated.h"
-#include "flatbuffers/idl.h"
+#include "flatbuffers/include/flatbuffers/idl.h"
 #include "test_assert.h"
 
 namespace flatbuffers {
@@ -113,7 +113,7 @@ void ConformTest() {
 
   // Check enum underlying type changes.
   test_conform("enum E:int32 {A}", "enum E: byte {A}", "underlying type differ for enum: E");
-  
+
   // Check union underlying type changes.
   const char ref3[] = "table A {} table B {} union C {A, B}";
   test_conform(ref3, "table A {} table B {} union C:int32 {A, B}", "underlying type differ for union: C");

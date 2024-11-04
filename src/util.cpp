@@ -43,7 +43,7 @@
 #endif
 // clang-format on
 
-#include "flatbuffers/util.h"
+#include "flatbuffers/include/flatbuffers/util.h"
 
 #include <sys/stat.h>
 
@@ -52,7 +52,7 @@
 #include <fstream>
 #include <functional>
 
-#include "flatbuffers/base.h"
+#include "flatbuffers/include/flatbuffers/base.h"
 
 namespace flatbuffers {
 

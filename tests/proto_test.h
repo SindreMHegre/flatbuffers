@@ -1,7 +1,7 @@
 #ifndef TESTS_PROTO_TEST_H
 #define TESTS_PROTO_TEST_H
 
-#include "flatbuffers/idl.h"
+#include "flatbuffers/include/flatbuffers/idl.h"
 
 #include <string>
 

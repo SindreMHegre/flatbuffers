@@ -18,7 +18,7 @@
 #include <set>
 #include <string>
 
-#include "flatbuffers/file_manager.h"
+#include "flatbuffers/include/flatbuffers/file_manager.h"
 
 namespace flatbuffers {
 

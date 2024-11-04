@@ -23,7 +23,7 @@
 #include <map>
 #include <sstream>
 
-#include "flatbuffers/util.h"
+#include "flatbuffers/include/flatbuffers/util.h"
 #include "src/compiler/schema_interface.h"
 #include "src/compiler/swift_generator.h"
 

@@ -3,7 +3,7 @@
 
 #include <string>
 
-#include "flatbuffers/detached_buffer.h"
+#include "flatbuffers/include/flatbuffers/detached_buffer.h"
 #include "monster_test_generated.h"
 
 namespace flatbuffers {
@@ -12,7 +12,7 @@ namespace tests {
 flatbuffers::DetachedBuffer CreateFlatBufferTest(std::string &buffer);
 
 void AccessFlatBufferTest(const uint8_t *flatbuf, size_t length,
-                          bool pooled = true); 
+                          bool pooled = true);
 
 void MutateFlatBuffersTest(uint8_t *flatbuf, std::size_t length);
 

@@ -17,7 +17,7 @@
 #ifndef FLATBUFFERS_IDL_GEN_CPP_H_
 #define FLATBUFFERS_IDL_GEN_CPP_H_
 
-#include "flatbuffers/code_generator.h"
+#include "flatbuffers/include/flatbuffers/code_generator.h"
 
 namespace flatbuffers {
 

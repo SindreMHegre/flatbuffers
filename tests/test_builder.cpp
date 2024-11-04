@@ -1,7 +1,7 @@
 #include "test_builder.h"
 
-#include "flatbuffers/flatbuffer_builder.h"
-#include "flatbuffers/stl_emulation.h"
+#include "flatbuffers/include/flatbuffers/flatbuffer_builder.h"
+#include "flatbuffers/include/flatbuffers/stl_emulation.h"
 #include "monster_test_generated.h"
 
 using namespace MyGame::Example;

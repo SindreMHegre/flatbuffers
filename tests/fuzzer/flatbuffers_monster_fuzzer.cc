@@ -22,7 +22,7 @@
 #include <string>
 
 #include "cpp17/generated_cpp17/monster_test_generated.h"
-#include "flatbuffers/idl.h"
+#include "flatbuffers/include/flatbuffers/idl.h"
 #include "test_assert.h"
 #include "test_init.h"
 

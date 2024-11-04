@@ -21,11 +21,11 @@
 #include <string>
 #include <utility>
 
-#include "flatbuffers/base.h"
-#include "flatbuffers/buffer.h"
-#include "flatbuffers/idl.h"
-#include "flatbuffers/reflection_generated.h"
-#include "flatbuffers/util.h"
+#include "flatbuffers/include/flatbuffers/base.h"
+#include "flatbuffers/include/flatbuffers/buffer.h"
+#include "flatbuffers/include/flatbuffers/idl.h"
+#include "flatbuffers/include/flatbuffers/reflection_generated.h"
+#include "flatbuffers/include/flatbuffers/util.h"
 
 namespace flatbuffers {
 
@@ -952,7 +952,7 @@ CheckedError Parser::ParseField(StructDef &struct_def) {
     Type union_type(type.enum_def->underlying_type);
     union_type.base_type = BASE_TYPE_UTYPE;
     ECHECK(AddField(struct_def, name + UnionTypeFieldSuffix(),union_type, &typefield));
-    
+
   } else if (IsVector(type) && type.element == BASE_TYPE_UNION) {
     advanced_features_ |= reflection::AdvancedUnionFeatures;
     // Only cpp, js and ts supports the union vector feature so far.
@@ -2514,7 +2514,7 @@ CheckedError Parser::ParseEnum(const bool is_union, EnumDef **dest,
       if (!IsInteger(enum_def->underlying_type.base_type) || IsBool(enum_def->underlying_type.base_type)) {
         return Error("underlying " + std::string(is_union ? "union" : "enum") + "type must be integral");
       }
-        
+
       // Make this type refer back to the enum it was derived from.
       enum_def->underlying_type.enum_def = enum_def;
     }

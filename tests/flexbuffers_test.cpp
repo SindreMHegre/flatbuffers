@@ -2,8 +2,8 @@
 
 #include <limits>
 
-#include "flatbuffers/flexbuffers.h"
-#include "flatbuffers/idl.h"
+#include "flatbuffers/include/flatbuffers/flexbuffers.h"
+#include "flatbuffers/include/flatbuffers/idl.h"
 #include "is_quiet_nan.h"
 #include "test_assert.h"
 

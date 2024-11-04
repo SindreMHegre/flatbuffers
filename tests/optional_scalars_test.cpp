@@ -3,7 +3,7 @@
 #include <string>
 #include <vector>
 
-#include "flatbuffers/idl.h"
+#include "flatbuffers/include/flatbuffers/idl.h"
 #include "optional_scalars_generated.h"
 #include "test_assert.h"
 

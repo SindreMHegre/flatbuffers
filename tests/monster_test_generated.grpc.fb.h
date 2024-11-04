@@ -5,7 +5,7 @@
 #define GRPC_monster_5ftest__INCLUDED
 
 #include "monster_test_generated.h"
-#include "flatbuffers/grpc.h"
+#include "flatbuffers/include/flatbuffers/grpc.h"
 
 #include <grpcpp/impl/codegen/async_stream.h>
 #include <grpcpp/impl/codegen/async_unary_call.h>
@@ -119,7 +119,7 @@ class MonsterStorage final {
     std::unique_ptr<  ::grpc::ClientAsyncReaderWriter< flatbuffers::grpc::Message<Monster>, flatbuffers::grpc::Message<Stat>>> PrepareAsyncGetMinMaxHitPoints(::grpc::ClientContext* context, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncReaderWriter< flatbuffers::grpc::Message<Monster>, flatbuffers::grpc::Message<Stat>>>(PrepareAsyncGetMinMaxHitPointsRaw(context, cq));
     }
-  
+
    private:
     std::shared_ptr< ::grpc::ChannelInterface> channel_;
     ::grpc::ClientAsyncResponseReader< flatbuffers::grpc::Message<Stat>>* AsyncStoreRaw(::grpc::ClientContext* context, const flatbuffers::grpc::Message<Monster>& request, ::grpc::CompletionQueue* cq) override;
@@ -139,7 +139,7 @@ class MonsterStorage final {
     const ::grpc::internal::RpcMethod rpcmethod_GetMinMaxHitPoints_;
   };
   static std::unique_ptr<Stub> NewStub(const std::shared_ptr< ::grpc::ChannelInterface>& channel, const ::grpc::StubOptions& options = ::grpc::StubOptions());
-  
+
   class Service : public ::grpc::Service {
    public:
     Service();

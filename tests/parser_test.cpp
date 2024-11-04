@@ -4,7 +4,7 @@
 #include <limits>
 #include <string>
 
-#include "flatbuffers/idl.h"
+#include "flatbuffers/include/flatbuffers/idl.h"
 #include "test_assert.h"
 
 namespace flatbuffers {
@@ -847,7 +847,7 @@ void ParseUnionTest() {
   flatbuffers::Parser parser3;
   parser3.opts.lang_to_generate = flatbuffers::IDLOptions::kCpp | flatbuffers::IDLOptions::kTs;
   TEST_EQ(parser3.Parse(source), true);
-  
+
   parser3.opts.lang_to_generate &= flatbuffers::IDLOptions::kJava;
   TEST_EQ(parser3.Parse(source), false);
 }

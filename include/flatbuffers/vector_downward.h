@@ -20,9 +20,9 @@
 #include <algorithm>
 #include <cstdint>
 
-#include "flatbuffers/base.h"
-#include "flatbuffers/default_allocator.h"
-#include "flatbuffers/detached_buffer.h"
+#include "flatbuffers/include/flatbuffers/base.h"
+#include "flatbuffers/include/flatbuffers/default_allocator.h"
+#include "flatbuffers/include/flatbuffers/detached_buffer.h"
 
 namespace flatbuffers {
 

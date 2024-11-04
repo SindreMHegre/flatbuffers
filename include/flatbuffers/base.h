@@ -461,7 +461,11 @@ inline size_t PaddingBytes(size_t buf_size, size_t scalar_size) {
 // Generic 'operator==' with conditional specialisations.
 // T e - new value of a scalar field.
 // T def - default of scalar (is known at compile-time).
-template<typename T> inline bool IsTheSameAs(T e, T def) { return e == def; }
+template<typename T> inline bool IsTheSameAs(T e, T def) {
+  #pragma GCC diagnostic push
+  #pragma GCC diagnostic ignored "-Wfloat-equal"
+  return e == def;
+}
 
 #if defined(FLATBUFFERS_NAN_DEFAULTS) && \
     defined(FLATBUFFERS_HAS_NEW_STRTOD) && (FLATBUFFERS_HAS_NEW_STRTOD > 0)

@@ -22,10 +22,10 @@
 #include <string>
 #include <vector>
 
-#include "flatbuffers/base.h"
-#include "flatbuffers/reflection.h"
-#include "flatbuffers/stl_emulation.h"
-#include "flatbuffers/util.h"
+#include "flatbuffers/include/flatbuffers/base.h"
+#include "flatbuffers/include/flatbuffers/reflection.h"
+#include "flatbuffers/include/flatbuffers/stl_emulation.h"
+#include "flatbuffers/include/flatbuffers/util.h"
 
 namespace flatbuffers {
 

@@ -20,7 +20,7 @@
 #include <set>
 #include <string>
 
-#include "flatbuffers/util.h"
+#include "flatbuffers/include/flatbuffers/util.h"
 
 namespace flatbuffers {
 

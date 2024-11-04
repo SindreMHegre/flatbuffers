@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#include "flatbuffers/flatc.h"
+#include "flatbuffers/include/flatbuffers/flatc.h"
 
 #include <algorithm>
 #include <limits>
@@ -24,9 +24,9 @@
 
 #include "annotated_binary_text_gen.h"
 #include "binary_annotator.h"
-#include "flatbuffers/code_generator.h"
-#include "flatbuffers/idl.h"
-#include "flatbuffers/util.h"
+#include "flatbuffers/include/flatbuffers/code_generator.h"
+#include "flatbuffers/include/flatbuffers/idl.h"
+#include "flatbuffers/include/flatbuffers/util.h"
 
 namespace flatbuffers {
 

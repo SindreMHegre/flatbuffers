@@ -1,6 +1,6 @@
 #include "util_test.h"
 
-#include "flatbuffers/util.h"
+#include "flatbuffers/include/flatbuffers/util.h"
 #include "test_assert.h"
 
 namespace flatbuffers {

@@ -19,7 +19,7 @@
 
 #include <string>
 
-#include "flatbuffers/idl.h"
+#include "flatbuffers/include/flatbuffers/idl.h"
 
 namespace flatbuffers {
 
