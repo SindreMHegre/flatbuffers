@@ -17,9 +17,9 @@
 #ifndef FLATBUFFERS_CODE_GENERATOR_H_
 #define FLATBUFFERS_CODE_GENERATOR_H_
 
-#include <string>
+#include <gcc_embedded/arm-none-eabi/include/c++/13.2.1/string>
 
-#include "flatbuffers/include/flatbuffers/idl.h"
+#include "flatbuffers/idl.h"
 
 namespace flatbuffers {
 

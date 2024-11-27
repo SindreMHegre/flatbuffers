@@ -18,22 +18,22 @@
 #define FLATBUFFERS_FLATC_PCH_H_
 
 // stl
-#include <cmath>
-#include <sstream>
+#include <gcc_embedded/arm-none-eabi/include/c++/13.2.1/cmath>
+#include <gcc_embedded/arm-none-eabi/include/c++/13.2.1/sstream>
 #include <cassert>
 #include <unordered_set>
-#include <unordered_map>
+#include <gcc_embedded/arm-none-eabi/include/c++/13.2.1/unordered_map>
 #include <iostream>
-#include <functional>
-#include <set>
-#include <iterator>
-#include <tuple>
+#include <gcc_embedded/arm-none-eabi/include/c++/13.2.1/functional>
+#include <gcc_embedded/arm-none-eabi/include/c++/13.2.1/set>
+#include <gcc_embedded/arm-none-eabi/include/c++/13.2.1/iterator>
+#include <gcc_embedded/arm-none-eabi/include/c++/13.2.1/tuple>
 
 // flatbuffers
-#include "flatbuffers/include/flatbuffers/pch/pch.h"
-#include "flatbuffers/include/flatbuffers/code_generators.h"
-#include "flatbuffers/include/flatbuffers/flatbuffers.h"
-#include "flatbuffers/include/flatbuffers/flexbuffers.h"
-#include "flatbuffers/include/flatbuffers/idl.h"
+#include "flatbuffers/pch/pch.h"
+#include "flatbuffers/code_generators.h"
+#include "flatbuffers/flatbuffers.h"
+#include "flatbuffers/flexbuffers.h"
+#include "flatbuffers/idl.h"
 
 #endif // FLATBUFFERS_FLATC_PCH_H_

@@ -18,11 +18,11 @@
 #define FLATBUFFERS_ARRAY_H_
 
 #include <cstdint>
-#include <memory>
+#include <gcc_embedded/arm-none-eabi/include/c++/13.2.1/memory>
 
-#include "flatbuffers/include/flatbuffers/base.h"
-#include "flatbuffers/include/flatbuffers/stl_emulation.h"
-#include "flatbuffers/include/flatbuffers/vector.h"
+#include "flatbuffers/base.h"
+#include "flatbuffers/stl_emulation.h"
+#include "flatbuffers/vector.h"
 
 namespace flatbuffers {
 

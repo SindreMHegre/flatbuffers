@@ -20,20 +20,26 @@
 #include <ctype.h>
 #include <errno.h>
 
-#include "flatbuffers/include/flatbuffers/base.h"
-#include "flatbuffers/include/flatbuffers/stl_emulation.h"
+#include "flatbuffers/base.h"
+#include "flatbuffers/stl_emulation.h"
+
+// For TFLM we always want to use FLATBUFFERS_PREFER_PRINTF=1. See
+// http://b/211811553 for more context.
+#ifndef FLATBUFFERS_PREFER_PRINTF
+#define FLATBUFFERS_PREFER_PRINTF 1
+#endif
 
 #ifndef FLATBUFFERS_PREFER_PRINTF
-#  include <iomanip>
-#  include <sstream>
+#include <iomanip>
+#include <gcc_embedded/arm-none-eabi/include/c++/13.2.1/sstream>
 #else  // FLATBUFFERS_PREFER_PRINTF
-#  include <float.h>
-#  include <stdio.h>
+#include <float.h>
+#include <stdio.h>
 #endif  // FLATBUFFERS_PREFER_PRINTF
 
-#include <cmath>
-#include <limits>
-#include <string>
+#include <gcc_embedded/arm-none-eabi/include/c++/13.2.1/cmath>
+#include <gcc_embedded/arm-none-eabi/include/c++/13.2.1/limits>
+#include <gcc_embedded/arm-none-eabi/include/c++/13.2.1/string>
 
 namespace flatbuffers {
 

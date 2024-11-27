@@ -17,15 +17,15 @@
 #ifndef FLATBUFFERS_FLEXBUFFERS_H_
 #define FLATBUFFERS_FLEXBUFFERS_H_
 
-#include <algorithm>
-#include <map>
+#include <gcc_embedded/arm-none-eabi/include/c++/13.2.1/algorithm>
+#include <gcc_embedded/arm-none-eabi/include/c++/13.2.1/map>
 // Used to select STL variant.
-#include "flatbuffers/include/flatbuffers/base.h"
+#include "flatbuffers/base.h"
 // We use the basic binary writing functions from the regular FlatBuffers.
-#include "flatbuffers/include/flatbuffers/util.h"
+#include "flatbuffers/util.h"
 
 #ifdef _MSC_VER
-#  include <intrin.h>
+#include <intrin.h>
 #endif
 
 #if defined(_MSC_VER)
@@ -495,9 +495,24 @@ class Reference {
           return static_cast<double>(ReadUInt64(Indirect(), byte_width_));
         case FBT_NULL: return 0.0;
         case FBT_STRING: {
+#if 1
+#if !defined( _MSC_VER)
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wnull-dereference"
+#endif
+          // See b/173239141 for additional context. Patched via
+          // micro/tools/make/flexbuffers_download.sh
+          // Introduce a segfault for an unsupported code path for TFLM.
+          return *(static_cast<double*>(nullptr));
+#if !defined( _MSC_VER)
+#pragma GCC diagnostic pop
+#endif
+#else
+          // This is the original code
           double d;
           flatbuffers::StringToNumber(AsString().c_str(), &d);
           return d;
+#endif
         }
         case FBT_VECTOR: return static_cast<double>(AsVector().size());
         case FBT_BOOL:

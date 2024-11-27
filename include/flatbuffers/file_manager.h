@@ -17,10 +17,10 @@
 #ifndef FLATBUFFERS_FILE_MANAGER_H_
 #define FLATBUFFERS_FILE_MANAGER_H_
 
-#include <set>
-#include <string>
+#include <gcc_embedded/arm-none-eabi/include/c++/13.2.1/set>
+#include <gcc_embedded/arm-none-eabi/include/c++/13.2.1/string>
 
-#include "flatbuffers/include/flatbuffers/util.h"
+#include "flatbuffers/util.h"
 
 namespace flatbuffers {
 

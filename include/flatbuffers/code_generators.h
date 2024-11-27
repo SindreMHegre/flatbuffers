@@ -17,10 +17,10 @@
 #ifndef FLATBUFFERS_CODE_GENERATORS_H_
 #define FLATBUFFERS_CODE_GENERATORS_H_
 
-#include <map>
-#include <sstream>
+#include <gcc_embedded/arm-none-eabi/include/c++/13.2.1/map>
+#include <gcc_embedded/arm-none-eabi/include/c++/13.2.1/sstream>
 
-#include "flatbuffers/include/flatbuffers/idl.h"
+#include "flatbuffers/idl.h"
 
 namespace flatbuffers {
 

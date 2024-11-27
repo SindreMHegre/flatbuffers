@@ -1,6 +1,16 @@
 #ifndef FLATBUFFERS_BASE_H_
 #define FLATBUFFERS_BASE_H_
 
+// For TFLM, we always want FLATBUFFERS_LOCALE_INDEPENDENT to be defined as 0.
+// We could achieve this by adding -DFLATBUFFERS_LOCALE_INDEPENDENT=0 to the
+// TFLM Makefile. However, for (at least) the Arduino, adding additional build
+// flags during the compilation can be a bit awkward. As such, we have instead
+// made a decision to change the default to be FLATBUFFERS_LOCALE_INDEPENDENT=0
+// for TFLM to make it easier for external IDE integration.
+#ifndef FLATBUFFERS_LOCALE_INDEPENDENT
+#define FLATBUFFERS_LOCALE_INDEPENDENT 0
+#endif
+
 // clang-format off
 
 // If activate should be declared and included first.
@@ -35,17 +45,17 @@
 #if defined(ARDUINO) && !defined(ARDUINOSTL_M_H) && defined(__AVR__)
   #include <utility.h>
 #else
-  #include <utility>
+  #include <gcc_embedded/arm-none-eabi/include/c++/13.2.1/utility>
 #endif
 
-#include <string>
-#include <type_traits>
-#include <vector>
-#include <set>
-#include <algorithm>
-#include <limits>
-#include <iterator>
-#include <memory>
+#include <gcc_embedded/arm-none-eabi/include/c++/13.2.1/string>
+#include <gcc_embedded/arm-none-eabi/include/c++/13.2.1/type_traits>
+#include <gcc_embedded/arm-none-eabi/include/c++/13.2.1/vector>
+#include <gcc_embedded/arm-none-eabi/include/c++/13.2.1/set>
+#include <gcc_embedded/arm-none-eabi/include/c++/13.2.1/algorithm>
+#include <gcc_embedded/arm-none-eabi/include/c++/13.2.1/limits>
+#include <gcc_embedded/arm-none-eabi/include/c++/13.2.1/iterator>
+#include <gcc_embedded/arm-none-eabi/include/c++/13.2.1/memory>
 
 #if defined(__unix__) && !defined(FLATBUFFERS_LOCALE_INDEPENDENT)
   #include <unistd.h>
@@ -221,7 +231,7 @@ namespace flatbuffers {
   #if defined(__has_include)
     // Check for std::string_view (in c++17)
     #if __has_include(<string_view>) && (__cplusplus >= 201606 || (defined(_HAS_CXX17) && _HAS_CXX17))
-      #include <string_view>
+      #include <gcc_embedded/arm-none-eabi/include/c++/13.2.1/string_view>
       namespace flatbuffers {
         typedef std::string_view string_view;
       }
@@ -461,11 +471,7 @@ inline size_t PaddingBytes(size_t buf_size, size_t scalar_size) {
 // Generic 'operator==' with conditional specialisations.
 // T e - new value of a scalar field.
 // T def - default of scalar (is known at compile-time).
-template<typename T> inline bool IsTheSameAs(T e, T def) {
-  #pragma GCC diagnostic push
-  #pragma GCC diagnostic ignored "-Wfloat-equal"
-  return e == def;
-}
+template<typename T> inline bool IsTheSameAs(T e, T def) { return e == def; }
 
 #if defined(FLATBUFFERS_NAN_DEFAULTS) && \
     defined(FLATBUFFERS_HAS_NEW_STRTOD) && (FLATBUFFERS_HAS_NEW_STRTOD > 0)

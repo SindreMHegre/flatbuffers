@@ -17,12 +17,12 @@
 #ifndef FLATBUFFERS_VECTOR_DOWNWARD_H_
 #define FLATBUFFERS_VECTOR_DOWNWARD_H_
 
-#include <algorithm>
+#include <gcc_embedded/arm-none-eabi/include/c++/13.2.1/algorithm>
 #include <cstdint>
 
-#include "flatbuffers/include/flatbuffers/base.h"
-#include "flatbuffers/include/flatbuffers/default_allocator.h"
-#include "flatbuffers/include/flatbuffers/detached_buffer.h"
+#include "flatbuffers/base.h"
+#include "flatbuffers/default_allocator.h"
+#include "flatbuffers/detached_buffer.h"
 
 namespace flatbuffers {
 

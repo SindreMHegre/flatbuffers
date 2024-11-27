@@ -17,17 +17,17 @@
 #ifndef FLATBUFFERS_IDL_H_
 #define FLATBUFFERS_IDL_H_
 
-#include <algorithm>
-#include <functional>
-#include <map>
-#include <memory>
+#include <gcc_embedded/arm-none-eabi/include/c++/13.2.1/algorithm>
+#include <gcc_embedded/arm-none-eabi/include/c++/13.2.1/functional>
+#include <gcc_embedded/arm-none-eabi/include/c++/13.2.1/map>
+#include <gcc_embedded/arm-none-eabi/include/c++/13.2.1/memory>
 #include <stack>
 
-#include "flatbuffers/include/flatbuffers/base.h"
-#include "flatbuffers/include/flatbuffers/flatbuffers.h"
-#include "flatbuffers/include/flatbuffers/flexbuffers.h"
-#include "flatbuffers/include/flatbuffers/hash.h"
-#include "flatbuffers/include/flatbuffers/reflection.h"
+#include "flatbuffers/base.h"
+#include "flatbuffers/flatbuffers.h"
+#include "flatbuffers/flexbuffers.h"
+#include "flatbuffers/hash.h"
+#include "flatbuffers/reflection.h"
 
 // This file defines the data types representing a parsed IDL (Interface
 // Definition Language) / schema file.

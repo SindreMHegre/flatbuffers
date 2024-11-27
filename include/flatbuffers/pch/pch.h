@@ -20,19 +20,19 @@
 // stl
 #include <cstdint>
 #include <cstring>
-#include <algorithm>
+#include <gcc_embedded/arm-none-eabi/include/c++/13.2.1/algorithm>
 #include <list>
-#include <string>
-#include <utility>
+#include <gcc_embedded/arm-none-eabi/include/c++/13.2.1/string>
+#include <gcc_embedded/arm-none-eabi/include/c++/13.2.1/utility>
 #include <iomanip>
-#include <map>
-#include <memory>
-#include <limits>
+#include <gcc_embedded/arm-none-eabi/include/c++/13.2.1/map>
+#include <gcc_embedded/arm-none-eabi/include/c++/13.2.1/memory>
+#include <gcc_embedded/arm-none-eabi/include/c++/13.2.1/limits>
 #include <stack>
-#include <vector>
-#include <type_traits>
+#include <gcc_embedded/arm-none-eabi/include/c++/13.2.1/vector>
+#include <gcc_embedded/arm-none-eabi/include/c++/13.2.1/type_traits>
 
 // flatbuffers
-#include "flatbuffers/include/flatbuffers/util.h"
+#include "flatbuffers/util.h"
 
 #endif // FLATBUFFERS_PCH_H_

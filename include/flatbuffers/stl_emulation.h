@@ -18,13 +18,13 @@
 #define FLATBUFFERS_STL_EMULATION_H_
 
 // clang-format off
-#include "flatbuffers/include/flatbuffers/base.h"
+#include "flatbuffers/base.h"
 
-#include <string>
-#include <type_traits>
-#include <vector>
-#include <memory>
-#include <limits>
+#include <gcc_embedded/arm-none-eabi/include/c++/13.2.1/string>
+#include <gcc_embedded/arm-none-eabi/include/c++/13.2.1/type_traits>
+#include <gcc_embedded/arm-none-eabi/include/c++/13.2.1/vector>
+#include <gcc_embedded/arm-none-eabi/include/c++/13.2.1/memory>
+#include <gcc_embedded/arm-none-eabi/include/c++/13.2.1/limits>
 
 #ifndef FLATBUFFERS_USE_STD_OPTIONAL
   // Detect C++17 compatible compiler.
@@ -38,7 +38,7 @@
 #endif // FLATBUFFERS_USE_STD_OPTIONAL
 
 #if FLATBUFFERS_USE_STD_OPTIONAL
-  #include <optional>
+  #include <gcc_embedded/arm-none-eabi/include/c++/13.2.1/optional>
 #endif
 
 #ifndef FLATBUFFERS_USE_STD_SPAN
@@ -51,7 +51,7 @@
 #endif // FLATBUFFERS_USE_STD_SPAN
 
 #if defined(FLATBUFFERS_USE_STD_SPAN)
-  #include <array>
+  #include <gcc_embedded/arm-none-eabi/include/c++/13.2.1/array>
   #include <span>
 #else
   // Disable non-trivial ctors if FLATBUFFERS_SPAN_MINIMAL defined.
@@ -59,7 +59,7 @@
     #define FLATBUFFERS_SPAN_MINIMAL
   #else
     // Enable implicit construction of a span<T,N> from a std::array<T,N>.
-    #include <array>
+    #include <gcc_embedded/arm-none-eabi/include/c++/13.2.1/array>
   #endif
 #endif // defined(FLATBUFFERS_USE_STD_SPAN)
 

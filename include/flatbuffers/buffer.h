@@ -17,9 +17,9 @@
 #ifndef FLATBUFFERS_BUFFER_H_
 #define FLATBUFFERS_BUFFER_H_
 
-#include <algorithm>
+#include <gcc_embedded/arm-none-eabi/include/c++/13.2.1/algorithm>
 
-#include "flatbuffers/include/flatbuffers/base.h"
+#include "flatbuffers/base.h"
 
 namespace flatbuffers {
 

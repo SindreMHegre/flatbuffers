@@ -17,26 +17,26 @@
 #ifndef FLATBUFFERS_FLATBUFFER_BUILDER_H_
 #define FLATBUFFERS_FLATBUFFER_BUILDER_H_
 
-#include <algorithm>
+#include <gcc_embedded/arm-none-eabi/include/c++/13.2.1/algorithm>
 #include <cstdint>
-#include <functional>
-#include <initializer_list>
-#include <type_traits>
+#include <gcc_embedded/arm-none-eabi/include/c++/13.2.1/functional>
+#include <gcc_embedded/arm-none-eabi/include/c++/13.2.1/initializer_list>
+#include <gcc_embedded/arm-none-eabi/include/c++/13.2.1/type_traits>
 
-#include "flatbuffers/include/flatbuffers/allocator.h"
-#include "flatbuffers/include/flatbuffers/array.h"
-#include "flatbuffers/include/flatbuffers/base.h"
-#include "flatbuffers/include/flatbuffers/buffer.h"
-#include "flatbuffers/include/flatbuffers/buffer_ref.h"
-#include "flatbuffers/include/flatbuffers/default_allocator.h"
-#include "flatbuffers/include/flatbuffers/detached_buffer.h"
-#include "flatbuffers/include/flatbuffers/stl_emulation.h"
-#include "flatbuffers/include/flatbuffers/string.h"
-#include "flatbuffers/include/flatbuffers/struct.h"
-#include "flatbuffers/include/flatbuffers/table.h"
-#include "flatbuffers/include/flatbuffers/vector.h"
-#include "flatbuffers/include/flatbuffers/vector_downward.h"
-#include "flatbuffers/include/flatbuffers/verifier.h"
+#include "flatbuffers/allocator.h"
+#include "flatbuffers/array.h"
+#include "flatbuffers/base.h"
+#include "flatbuffers/buffer.h"
+#include "flatbuffers/buffer_ref.h"
+#include "flatbuffers/default_allocator.h"
+#include "flatbuffers/detached_buffer.h"
+#include "flatbuffers/stl_emulation.h"
+#include "flatbuffers/string.h"
+#include "flatbuffers/struct.h"
+#include "flatbuffers/table.h"
+#include "flatbuffers/vector.h"
+#include "flatbuffers/vector_downward.h"
+#include "flatbuffers/verifier.h"
 
 namespace flatbuffers {
 
